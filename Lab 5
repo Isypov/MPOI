@@ -19,17 +19,17 @@ head(movies, 6)$Title
 #### 2.	Виведіть всі назви фільмів с тривалістю більше 120 хв.
 ```{r}
 subset(movies, Runtime > 120)$Title
- [1] "Зорянi вiйни: Останнi Джедаi"             "The Shape of Water"                       "Тор: Рагнарок"                           
- [4] "Mother!"                                  "Kingsman: Золоте кiльце"                  "Вартовi Галактики 2"                     
- [7] "Воно"                                     "The Killing of a Sacred Deer"             "Darkest Hour"                            
-[10] "Call Me by Your Name"                     "Той, хто бiжить по лезу 2049"             "Валерiан i мiсто тисячi планет"          
-[13] "Логан: Росомаха"                          "Phantom Thread"                           "Downsizing"                              
-[16] "Диво-Жiнка"                               "Людина-павук: Повернення додому"          "Detroit"                                 
-[19] "All the Money in the World"               "Molly's Game"                             "Сiм сестер"                              
-[22] "Красуня i Чудовисько"                     "Вiйна за планету мавп"                    "Mudbound"                                
-[25] "The Square"                               "Roman J. Israel, Esq."                    "Пiрати Карибського моря: Помста Салазара"
-[28] "Трансформери: Останнiй лицар"             "Пострiл в безодню"                        "Power Rangers"                           
-[31] "Hostiles"                                 "Girls Trip"                               "Джон Уiк 2"
+[1] "Зорянi вiйни: Останнi Джедаi"             [12] "Валерiан i мiсто тисячi планет"           [23] "Вiйна за планету мавп"                           
+[2] "The Shape of Water"                       [13] "Логан: Росомаха"                          [24] "Mudbound"                    
+[3] "Тор: Рагнарок"                            [14] "Phantom Thread"                           [25] "The Square"                           
+[4] "Mother!"                                  [15] "Downsizing"                               [26] "Roman J. Israel, Esq."            
+[5] "Kingsman: Золоте кiльце"                  [16] "Диво-Жiнка"                               [27] "Пiрати Карибського моря: Помста Салазара"                             
+[6] "Вартовi Галактики 2"                      [17] "Людина-павук: Повернення додому"          [28] "Трансформери: Останнiй лицар"                                
+[7] "Воно"                                     [18] "Detroit"                                  [29] "Пострiл в безодню"                            
+[8] "The Killing of a Sacred Deer"             [19] "All the Money in the World"               [30] "Power Rangers"                      
+[9] "Darkest Hour"                             [20] "Molly's Game"                             [31] "Hostiles" 
+[10] "Call Me by Your Name"                    [21] "Сiм сестер"                               [32] "Girls Trip"                           
+[11] "Той, хто бiжить по лезу 2049"            [22] "Красуня i Чудовисько"                     [33] "Джон Уiк 2" 
 ```
 
 #### 3.	Скільки фільмів мають тривалість менше 100 хв.
