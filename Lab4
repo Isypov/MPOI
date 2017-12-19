@@ -1,0 +1,48 @@
+download.file(url="https://dcc.ligo.org/public/0146/P1700337/001/H-H1_LOSC_C00_4_V1-1187006834-4096.hdf5", destfile = "data.hdf5", mode="wb")
+trying URL 'https://dcc.ligo.org/public/0146/P1700337/001/H-H1_LOSC_C00_4_V1-1187006834-4096.hdf5'
+
+
+
+
+Content type 'text/plain; charset=UTF-8' length 125217658 bytes (119.4 MB)
+downloaded 119.4 MB
+
+source("http://bioconductor.org/biocLite.R")
+Installing package into ‘C:/Users/Peter/Documents/R/win-library/3.3’
+(as ‘lib’ is unspecified)
+trying URL 'https://bioconductor.org/packages/3.4/bioc/bin/windows/contrib/3.3/BiocInstaller_1.24.0.zip'
+Content type 'application/zip' length 126079 bytes (123 KB)
+downloaded 123 KB
+
+package ‘BiocInstaller’ successfully unpacked and MD5 sums checked
+
+The downloaded binary packages are in
+	C:\Users\Peter\AppData\Local\Temp\RtmpqS1lqZ\downloaded_packages
+Bioconductor version 3.4 (BiocInstaller 1.24.0), ?biocLite for help
+A new version of Bioconductor is available after installing the most recent version of R; see
+  http://bioconductor.org/install
+   biocLite("rhdf5")
+BioC_mirror: https://bioconductor.org
+Using Bioconductor 3.4 (BiocInstaller 1.24.0), R 3.3.3 (2017-03-06).
+Installing package(s) ‘rhdf5’
+also installing the dependency ‘zlibbioc’
+
+trying URL 'https://bioconductor.org/packages/3.4/bioc/bin/windows/contrib/3.3/zlibbioc_1.20.0.zip'
+Content type 'application/zip' length 749950 bytes (732 KB)
+downloaded 732 KB
+
+trying URL 'https://bioconductor.org/packages/3.4/bioc/bin/windows/contrib/3.3/rhdf5_2.18.0.zip'
+Content type 'application/zip' length 5737707 bytes (5.5 MB)
+downloaded 5.5 MB
+
+package ‘zlibbioc’ successfully unpacked and MD5 sums checked
+package ‘rhdf5’ successfully unpacked and MD5 sums checked
+
+The downloaded binary packages are in
+	C:\Users\Peter\AppData\Local\Temp\RtmpqS1lqZ\downloaded_packages
+installation path not writeable, unable to update packages: boot, cluster, foreign, lattice, MASS, Matrix, mgcv,
+  rpart, survival
+Old packages: 'backports', 'checkmate', 'crayon', 'curl', 'data.table', 'digest', 'evaluate', 'Formula', 'gdtools',
+  'gridExtra', 'htmlTable', 'htmlwidgets', 'httr', 'lazyeval', 'openssl', 'Rcpp', 'reshape2', 'rex', 'rlang',
+  'rprojroot', 'sandwich', 'scales', 'sp', 'stringi', 'tibble', 'withr', 'yaml'
+Update all/some/none? [a/s/n]: 
