@@ -1,0 +1,8 @@
+За допомогою download.file() завантажте любий excel файл з порталу http://data.gov.ua та зчитайте його (xls, xlsx – бінарні формати, тому встановить mode = “wb”. Виведіть перші 6 строк отриманого фрейму даних.
+Sys.setlocale(locale = "ukrainian")
+[1] "LC_COLLATE=Ukrainian_Ukraine.1251;LC_CTYPE=Ukrainian_Ukraine.1251;LC_MONETARY=Ukrainian_Ukraine.1251;LC_NUMERIC=C;LC_TIME=Ukrainian_Ukraine.1251"
+ fileURL <- "http://data.gov.ua/file/153127/download?token=_NW8G82t"
+> download.file(fileURL, destfile = "data.xls", mode = "wb")
+trying URL 'http://data.gov.ua/file/153127/download?token=_NW8G82t'
+Content type 'application/vnd.ms-excel' length 31232 bytes (30 KB)
+downloaded 30 KB
