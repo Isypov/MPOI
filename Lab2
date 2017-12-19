@@ -1,8 +1,7 @@
+1. Створить список list1 <- list(observationA = c(1:5, 7:3), observationB = matrix(1:6, nrow=2)). Для цього списку знайдіть sum за допомогою lapply.
 
-
-    Створить список list1 <- list(observationA = c(1:5, 7:3), observationB = matrix(1:6, nrow=2)). Для цього списку знайдіть sum за допомогою lapply.
-
-list1 <-  list(observationA = c(1:5, 7:3), observationB = matrix(1:6, nrow=2))
+```r
+> list1 <-  list(observationA = c(1:5, 7:3), observationB = matrix(1:6, nrow=2))
 > list1
 $observationA
  [1] 1 2 3 4 5 7 6 5 4 3
@@ -17,6 +16,7 @@ $observationA
 
 $observationB
 [1] 21
+```
 
 Для кожного елементу списку list1 знайдіть максимальне та мінімальне значення (range) за допомогою lapply та sapply.
 
