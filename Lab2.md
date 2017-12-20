@@ -1,6 +1,7 @@
 #1. Створить список list1 <- list(observationA = c(1:5, 7:3), observationB = matrix(1:6, nrow=2)). Для цього списку знайдіть sum за допомогою lapply.
 
 ```r
+#list - spisok,с -створити вектор ,                         створити матрицю з 2 рядками
 > list1 <-  list(observationA = c(1:5, 7:3), observationB = matrix(1:6, nrow=2))
 > list1
 $observationA
@@ -10,6 +11,7 @@ $observationB
      [,1] [,2] [,3]
 [1,]    1    3    5
 [2,]    2    4    6
+  
 > lapply(list1, sum)
 $observationA
 [1] 40
@@ -19,21 +21,23 @@ $observationB
 ```
 
 #2. Для кожного елементу списку list1 знайдіть максимальне та мінімальне значення (range) за допомогою lapply та sapply.
-
+ #завжди вертає список 
 > lapply(list1, range)
 $observationA
 [1] 1 7
 
 $observationB
 [1] 1 6
+# пробує краще відобразити дані
 > sapply(list1, range)
      observationA observationB
 [1,]            1            1
 [2,]            7            6
 
  #3. Для вбудованого набору даних InsectSprays знайти середнє count для кожного spray.
-
-> lapply(split[](InsectSprays, f=InsectSprays["spray"]), function(x) mean(x$count))
+#split-розділяє  датафрейм вбудов
+> lapply(split(InsectSprays, f=InsectSprays["spray"]), function(x) mean(x$count))
+# видало списком бо лаплай
 $A
 [1] 14.5
 
