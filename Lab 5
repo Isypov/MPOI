@@ -1,10 +1,14 @@
 
 ```r
 html = read_html("http://www.imdb.com/search/title?count=100&release_date=2017,2017&title_type=feature")
+              #вміст   #знах всі 1ранк
 rank_data <- html_text(html_nodes(html,'.text-primary'))
+             #претворити в числа текст ранку       
 rank_data = as.numeric(rank_data)
+               
 title_data <- html_text(html_nodes(html,'.lister-item-header a'))
 runtime_data <- html_text(html_nodes(html,'.text-muted .runtime'))
+                           # заміна min на пустоту
 runtime_data = as.numeric(gsub(" min", "", runtime_data))
 movies <- data.frame(Rank = rank_data, Title = title_data, Runtime = runtime_data, stringsAsFactors = FALSE)
 ```
@@ -18,6 +22,7 @@ head(movies, 6)$Title
 
 # 2.	Виведіть всі назви фільмів с тривалістю більше 120 хв.
 ```{r}
+# зробити підмножину
 subset(movies, Runtime > 120)$Title
 [1] "Зорянi вiйни: Останнi Джедаi"             [12] "Валерiан i мiсто тисячi планет"           [23] "Вiйна за планету мавп"                           
 [2] "The Shape of Water"                       [13] "Логан: Росомаха"                          [24] "Mudbound"                    
@@ -34,6 +39,7 @@ subset(movies, Runtime > 120)$Title
 
 # 3.	Скільки фільмів мають тривалість менше 100 хв.
 ```{r}
+     
 nrow(movies[movies$Runtime < 100, ])
 [1] 20
 ```
