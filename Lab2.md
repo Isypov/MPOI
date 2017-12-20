@@ -33,7 +33,7 @@ $observationB
 
  #3. Для вбудованого набору даних InsectSprays знайти середнє count для кожного spray.
 
-> lapply(split(InsectSprays, f=InsectSprays["spray"]), function(x) mean(x$count))
+> lapply(split[](InsectSprays, f=InsectSprays["spray"]), function(x) mean(x$count))
 $A
 [1] 14.5
 
