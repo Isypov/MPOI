@@ -131,6 +131,7 @@ The downloaded binary packages are in
 ```
 #8.	Створіть вектор з часу вимірів і збережіть у змінну myTime. Початок послідовності – gpsStart, кінець – gpsEnd, крок – st.
 ```r
+            #рахує від до з кроком ст
 > myTime <- seq(gpsStart, gpsEnd, st)
 ```
 
