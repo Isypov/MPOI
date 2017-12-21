@@ -22,6 +22,7 @@ $observationB
 
 #2. Для кожного елементу списку list1 знайдіть максимальне та мінімальне значення (range) за допомогою lapply та sapply.
  #завжди вертає список 
+ ```r
 > lapply(list1, range)
 $observationA
 [1] 1 7
@@ -33,9 +34,10 @@ $observationB
      observationA observationB
 [1,]            1            1
 [2,]            7            6
-
+```
  #3. Для вбудованого набору даних InsectSprays знайти середнє count для кожного spray.
 #split-розділяє  датафрейм вбудов
+ ```r
 > lapply(split(InsectSprays, f=InsectSprays["spray"]), function(x) mean(x$count))
 # видало списком бо лаплай
 $A
@@ -56,3 +58,4 @@ $E
 $F
 [1] 16.66667
 
+ ```
